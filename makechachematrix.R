@@ -22,6 +22,10 @@ cachesolve<- function(x,...){
   x$setInverse(Inv)
   Inv
 }
-
+data<- x$get()
+m<- mean(data,...)
+x$setmean(m)
+m
+}
 
   
